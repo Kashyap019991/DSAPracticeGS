@@ -20,7 +20,7 @@ public class PowerOfTen
 
     // Repeatedly divide x by 10 as long as it's divisible.
     // A number that is a power of 10 will eventually become 1.
-    while (x % 10 == 0) {
+    while( x % 10 == 0) {
       x /= 10;
     }
 

@@ -32,7 +32,7 @@ public class TopLogIpRegex {
 
     // Iterate through each line of the log file.
     for (String line : lines) {
-      Matcher matcher = pattern.matcher(line);
+     Matcher matcher = pattern.matcher(line);
       while (matcher.find()) {
         String ipAddress = matcher.group();
         if (isValidIpAddress(ipAddress)) {

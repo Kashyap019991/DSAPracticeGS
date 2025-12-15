@@ -29,6 +29,8 @@ class BestAvgGrade
       // If the student is already in the map, update their total score and count.
       if (studentScores.containsKey(studentName)) {
         int[] data = studentScores.get(studentName);
+        //studentScores.get(studentName)[0]+=score;
+        //studentScores.get(studentName)[1]++;
         data[0] += score; // Add the current score to the total.
         data[1]++;        // Increment the count of scores.
       } else {
@@ -58,6 +60,7 @@ class BestAvgGrade
     // Return the highest average grade found.
     return maxAverage;
   }
+
 
   public static boolean pass()
   {

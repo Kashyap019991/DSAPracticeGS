@@ -12,11 +12,11 @@ public class LinklidtReverse {
         ListNode curr = head;
         ListNode prev = null;
 
-        while(curr != null){
-            ListNode nextTemp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr=nextTemp;
+        while(curr != null){//1->2->3
+            ListNode tempNode = curr.next;//2->3//3
+            curr.next = prev;//1->null//2->1->null
+            prev = curr;//1//2
+            curr = tempNode;//2//3
         }
         return prev;
     }

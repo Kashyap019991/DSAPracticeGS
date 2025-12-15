@@ -76,7 +76,7 @@ public class PairSumFinder {
 
         for (int num : arr) {
             int complement = targetSum - num;
-
+//{1, 5, 7, -1, 5}; 6
             // Check if we have seen the complement before.
             if (seen.contains(complement)) {
                 // To ensure the pair is unique and not dependent on order (e.g., (1, 5) vs (5, 1)),

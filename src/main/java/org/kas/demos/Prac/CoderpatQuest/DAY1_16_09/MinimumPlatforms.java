@@ -45,10 +45,21 @@ public class MinimumPlatforms {
     }
 
     public static void main(String[] args) {
-        int[] arrival = {900, 940, 950, 1100, 1500, 1800};
-        int[] departure = {910, 1200, 1120, 1130, 1900, 2000};
-        int n = arrival.length;
+        //int[] arrival = {900, 940, 950, 1100, 1500, 1800};
+        //int[] departure = {910, 1200, 1120, 1130, 1900, 2000};
+        //{1, 4}, {2, 5}, {7, 9}
+        int[] arrival1 = {1,2,7};
+        int[] departure1 = {4,5,9};
 
-        System.out.println("Minimum Platforms Required: " + findPlatform(arrival, departure, n)); // Expected: 3
+        //{1, 3}, {2, 4}, {3, 5}, {6, 8}//exp=3
+        int[] arrival2 = {1,2,3,6};
+        int[] departure2 = {3,4,5,8};
+
+
+        //{1, 2}, {3, 4}, {5, 6} exp =1
+        int[] arrival3 = {1,3,6};
+        int[] departure3 = {2,4,6};
+        int n = arrival3.length;
+        System.out.println("Minimum Platforms Required: " + findPlatform(arrival3, departure3, n)); // Expected: 3
     }
 }

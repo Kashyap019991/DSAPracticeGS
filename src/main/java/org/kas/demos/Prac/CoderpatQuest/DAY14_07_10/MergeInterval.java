@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-
+/*
+Given an array of intervals where intervals[i] = [starti, endi],
+merge all overlapping intervals,
+and return an array of the non-overlapping intervals
+that cover all the intervals in the input
+ */
 class MergeInterval {
     public static int[][] merge(int[][] intervals) {
         // If there's only one or zero intervals, no merging is needed.

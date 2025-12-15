@@ -1,4 +1,4 @@
-package org.kas.demos.Prac.ParkingLotDesign;
+package org.kas.demos.Prac.LLD.ParkingLotDesign;
 
 import java.util.ArrayList;
 import java.util.List;

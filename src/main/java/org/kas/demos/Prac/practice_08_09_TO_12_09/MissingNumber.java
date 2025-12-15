@@ -1,6 +1,8 @@
 package org.kas.demos.Prac.practice_08_09_TO_12_09;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class MissingNumber {
 //lc 268
@@ -11,6 +13,7 @@ public class MissingNumber {
      * @param nums The array of numbers.
      * @return The missing number.
      */
+    /*
     public int findMissingNumber(int[] nums) {
         int n = nums.length;
         // Calculate the expected sum of numbers from 0 to n
@@ -25,7 +28,8 @@ public class MissingNumber {
         // The missing number is the difference between the expected and actual sum
         return expectedSum - actualSum;
     }
-/*\
+    */
+
 //method 2
 
  public int missingNumber(int[] nums) {
@@ -41,13 +45,13 @@ public class MissingNumber {
         }
         return 0;
     }
- */
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MissingNumber solution = new MissingNumber();
 
-        int[] arr = new int[] { 0, 0, 1, 2, 3, 4, 5 };
-        int missingNum = solution.findMissingNumber(arr);
+        int[] arr = new int[] {0,0, 1, 2, 4, 5 };
+        int missingNum = solution.missingNumber(arr);
         System.out.println("The missing number is: " + missingNum);
 
         scanner.close();

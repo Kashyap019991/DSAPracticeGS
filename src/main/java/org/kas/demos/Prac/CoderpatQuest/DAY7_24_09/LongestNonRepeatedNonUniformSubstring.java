@@ -24,18 +24,18 @@ public class LongestNonRepeatedNonUniformSubstring {
         int maxLength = 0;
         int start = 0; // The start of the sliding window
 
-        // Iterate through the string with the end of the window
-        for (int end = 0; end < s.length(); end++) {
-            char current = s.charAt(end);
+            // Iterate through the string with the end of the window
+            for (int end = 0; end < s.length(); end++) {
+                char current = s.charAt(end);
 
-            // If the character is already in the map and within the current window,
-            // move the start of the window past the last occurrence of this character.
-            if (lastSeen.containsKey(current)) {
-                start = Math.max(start, lastSeen.get(current) + 1);
-            }
+                // If the character is already in the map and within the current window,
+                // move the start of the window past the last occurrence of this character.
+                if (lastSeen.containsKey(current)) {
+                    start = Math.max(start, lastSeen.get(current) + 1);
+                }
 
-            // Update the last seen index of the current character
-            lastSeen.put(current, end);
+                // Update the last seen index of the current character
+                lastSeen.put(current, end);
 
             // Calculate the current window size
             int currentLength = end - start + 1;

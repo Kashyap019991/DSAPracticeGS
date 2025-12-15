@@ -1,4 +1,4 @@
-package org.kas.demos.Prac.ParkingLotDesign;
+package org.kas.demos.Prac.LLD.ParkingLotDesign;
 
 // ParkingSpot represents a single parking spot
 class ParkingSpot {

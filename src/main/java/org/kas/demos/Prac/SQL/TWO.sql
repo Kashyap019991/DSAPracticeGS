@@ -8,7 +8,8 @@
 	arrival_time
 	}
 
-	a. Write an SQL query to give flights travelling from Mumbai to Delhi today.
+	a. Write an SQL query to give flights travelling from
+	Mumbai to Delhi today.
 
 	SELECT *
     FROM Flights
@@ -18,7 +19,8 @@
 
 
 
-	b. Write an SQL query to give flight info leaving from Mumbai to Kolkata, via layover at Delhi.
+	b. Write an SQL query to give flight info leaving
+	from Mumbai to Kolkata, via layover at Delhi.
 
 	SELECT
       F1.Flight_no AS first_flight_no,

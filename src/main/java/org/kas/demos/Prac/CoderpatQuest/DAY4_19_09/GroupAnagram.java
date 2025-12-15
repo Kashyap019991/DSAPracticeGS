@@ -33,7 +33,7 @@ class GroupAnagram {
       char[] charArray = word.toCharArray();
       Arrays.sort(charArray);
       String sortedWord = new String(charArray);
-      
+      //cat dog tac sat tas god dog
       // Get the list of words for this sorted key, or create a new list if it doesn't exist.
       List<String> group = anagramGroups.getOrDefault(sortedWord, new ArrayList<>());
       

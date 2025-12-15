@@ -5,7 +5,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 //book my show, rapido, LRU
 public class SlidingWindowRateLimiter {
 
-    // A map to store user-specific request timestamps. It's thread-safe for concurrent access.
+    // A map to store user-specific request timestamps.
+    // It's thread-safe for concurrent access.
     private final ConcurrentHashMap<String, ConcurrentLinkedQueue<Long>> userRequests;
     private final int maxRequests;
     private final long windowMillis;

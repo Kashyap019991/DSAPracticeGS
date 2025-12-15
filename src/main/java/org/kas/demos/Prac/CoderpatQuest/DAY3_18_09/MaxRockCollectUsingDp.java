@@ -1,6 +1,6 @@
 package org.kas.demos.Prac.CoderpatQuest.DAY3_18_09;
 
-class MaxRockCollectUsingDp {
+class MaxCollectUsingDp {
 
   /**
    * Calculates the optimal path to accumulate the most rocks from SoCal (bottom-left)

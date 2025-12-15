@@ -1,4 +1,4 @@
-package org.kas.demos.Prac.CoderpatQuest.DAY_16__09_10;
+package org.kas.demos.Prac.CoderpatQuest.DAY16__09_10;
 /*
 create chatbot feature in whichyou have dictionary list and one String array input which consist of misspelled words. You need to auto correct the words if it is available in list.
 

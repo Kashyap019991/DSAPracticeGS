@@ -92,10 +92,13 @@ class Solution {
   }
 
   public static void main(String[] args) {
-    if (doTestsPass()) {
+    /*if (doTestsPass()) {
       System.out.println("All tests pass");
     } else {
       System.out.println("Tests fail.");
-    }
+    }*/
+    System.out.println(optimalPath(new Integer[][]{{0, 0, 0, 0, 5},
+            {0, 1, 1, 1, 0},
+            {2, 0, 0, 0, 0}}));
   }
 }

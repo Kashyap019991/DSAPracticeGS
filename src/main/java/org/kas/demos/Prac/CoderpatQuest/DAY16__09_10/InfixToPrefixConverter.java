@@ -1,4 +1,4 @@
-package org.kas.demos.Prac.CoderpatQuest.Pending;
+package org.kas.demos.Prac.CoderpatQuest.DAY16__09_10;
 
 import java.util.Stack;
 
