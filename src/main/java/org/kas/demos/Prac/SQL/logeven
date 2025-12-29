@@ -1,0 +1,13 @@
+
+Given an orders_log table that records all events for orders,
+with columns order_id, timestamp,
+status, and cust_id,
+write a query to find all order_ids which have the status as processing,
+processed, and completed (i.e., the order has gone through all three steps).
+
+
+SELECT order_id
+FROM orders_log
+WHERE status IN ('processing', 'processed', 'completed')
+GROUP BY order_id
+HAVING COUNT(DISTINCT status) = 3;

@@ -1,0 +1,11 @@
+    # Primary Database (e.g., MySQL)
+    primary.datasource.url=jdbc:mysql://localhost:3306/primary_db
+    primary.datasource.username=root
+    primary.datasource.password=password
+    primary.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+    # Secondary Database (e.g., PostgreSQL)
+    secondary.datasource.url=jdbc:postgresql://localhost:5432/secondary_db
+    secondary.datasource.username=user
+    secondary.datasource.password=password
+    secondary.datasource.driver-class-name=org.postgresql.Driver
