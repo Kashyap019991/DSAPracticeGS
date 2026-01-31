@@ -1,0 +1,15 @@
+To find the count of employees having the same salary,
+sorted in descending order of salary, use the following SQL query\
+
+
+SELECT
+    Salary,
+    COUNT(EmployeeID) AS EmployeeCount
+FROM
+    Employees
+GROUP BY
+    Salary
+HAVING
+    COUNT(EmployeeID) > 1
+ORDER BY
+    Salary DESC;
